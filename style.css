@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgb(53, 189, 212), rgb(4, 30, 48));
+}
+
+.container {
+  height: 90%;
+  width: 50%;
+  transition: ease-in 0.2s;
+  transition-delay: 0.1s;
+  aspect-ratio: 1, 1;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, rgb(71, 173, 190), rgb(27, 85, 126));
+  box-shadow: 0 0 10px black;
+}
+.searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 50%;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 0 0 5px black;
+  transition: ease-in 0.2s;
+  transition-delay: 0.1s;
+}
+
+input {
+  height: 50%;
+  width: 50%;
+  border-radius: 20px;
+}
+.windspeed {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: ease-in 0.2s;
+  transition-delay: 0.1s;
+}
+.humidity {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: ease-in 0.2s;
+  transition-delay: 0.1s;
+}
+#search_img {
+  height: 40px;
+  border-radius: 50%;
+  transition: ease-in 0.2s;
+  transition-delay: 0.1s;
+}
+#humidity_img,
+#windspeed_img {
+    height: 20%;
+}
+
+.weather_img {
+    height: 40%;
+    width: 30%;
+    margin: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 0 0 5px black;
+    color: white;
+    box-shadow: 0 0 10px black;
+    transition: ease-in 0.2s;
+    transition-delay: 0.1s;
+    text-shadow: 0px 0px 3px rgb(255, 255, 255);
+}
+#weather_img {
+  height: 40%;
+  width: 50%;
+}
+
+#temp-toggle{
+    border-radius: 7px;
+    margin-bottom: 5px;
+}
+
+.weather_info {
+  height: 30%;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
+  box-shadow: 0 0 10px black;
+  transition: ease-in 0.2s;
+  transition-delay: 0.1s;
+
+}
+#search_img:active {
+  transform: scale(50%);
+}
+
+.searchbar:hover {
+  box-shadow: 0 0 5px white;
+  border: 1px solid white;
+  transform: scale(105%);
+}
+.weather_img:hover {
+  box-shadow: 0 0 5px white;
+  border: 1px solid white;
+  transform: scale(105%);
+}
+.weather_info:hover {
+  border: 1px solid white;
+  box-shadow: 0 0 5px white;
+  transform: scale(105%);
+}
+.container:hover {
+  border: 1px solid white;
+  box-shadow: 0 0 5px white;
+}
+.humidity:hover {
+  transform: scale(105%);
+}
+#humidity:hover{
+    text-shadow: 0 0 10px white;
+
+}
+#windspeed:hover{
+   text-shadow: 0 0 10px white;
+
+}
+.windspeed:hover {
+    transform: scale(105%);
+}
+
+#search_img:hover {
+  box-shadow: 0 0 5px white;
+}
+
+#city_name:hover {
+  transform: scale(125%);
+  transition: ease-in 0.2s;
+  transition-delay: 0.1s;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+
+}
+#temperature:hover {
+  transform: scale(125%);
+  transition: ease-in 0.2s;
+  transition-delay: 0.1s;
+    text-shadow: 0px 0px 10px rgb(255, 255, 255);
+
+}
+@media (min-width: 330px) and (max-width: 700px) {
+  .container {
+    width: 300px;
+  }
+  .searchbar {
+    width: 90%;
+  }
+  .weather_img {
+    width: 80%;
+  }
+  .weather_info {
+    width: 90%;
+  }
+}
+
+@media (max-width: 330px) {
+  .container {
+    width: 90%;
+  }
+  .searchbar {
+    width: 90%;
+  }
+  .weather_img {
+    width: 90%;
+  }
+  .weather_info {
+    width: 90%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1400px) {
+  .container {
+    width: 50%;
+  }
+  .weather_img {
+    min-width: 200px;
+  }
+  .searchbar {
+    min-width: 250px;
+  }
+  .weather_info {
+    min-width: 300px;
+  }
+}
