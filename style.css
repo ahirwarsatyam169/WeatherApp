@@ -98,8 +98,17 @@ input {
 }
 
 #temp-toggle{
-    border-radius: 7px;
-    margin-bottom: 5px;
+  border-radius: 17px;
+  margin-bottom: 5px;
+  
+}
+#temp-toggle:hover{
+  background:linear-gradient(135deg rgb(127, 127, 169), blue);
+  transform: scale(105%);
+  box-shadow: 0 0 5px rgb(253, 253, 253);
+}
+#temp-toggle:active{
+  transform: scale(90%);
 }
 
 .weather_info {
@@ -187,6 +196,19 @@ input {
   .weather_info {
     width: 90%;
   }
+}
+@media (min-height:500px) and (max-height:800px) {
+  #weather_img{
+    height: 30%;
+    min-height: 60px;
+    width: 40%;
+    margin-top: 4px;
+    overflow: hidden;
+  }
+  #temp-toggle{
+    margin-bottom: 5px;
+  }
+  
 }
 
 @media (max-width: 330px) {
